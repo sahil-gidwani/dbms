@@ -1,0 +1,13 @@
+open browser
+ftp://1.1.1.250
+download mongo
+extract
+
+cd Downloads
+cd Mongo --press tab
+cd bin/
+./mongod --dbpath <paste path here>
+
+open new terminal
+./mongo
+show dbs
