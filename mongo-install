@@ -6,7 +6,7 @@ extract
 cd Downloads
 cd Mongo --press tab
 cd bin/
-./mongod --dbpath <paste path here>
+./mongod --dbpath <paste path here>/bin
 
 open new terminal
 ./mongo
