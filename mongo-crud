@@ -1,0 +1,17 @@
+db.createCollection("library");
+db.getCollectionNames();
+
+db.library.insertOne({bid:1, name:"sahil", book:"abc", age:10});
+db.library.insertMany([{bid:2, name:"sahil2", book:"abc2", age:20},{bid:3, name:"sahil3", book:"abc3", age:30}]);
+db.library.save({bid:4, name:"sahil4", book:"abc4", age:40});
+
+db.library.find();
+db.library.find().pretty();
+db.library.find({name:"sahil"});
+db.library.find({$and:[{name:"sahil"},{age:{$gte:10}}]});
+
+db.library.update({name:"sahil"},{bid:10});
+db.library.replaceOne({name:"sahil"},{name:"sahil1"});
+
+db.library.delete({name:"sahil1"});
+db.library.remove({name:"sahil2"});
